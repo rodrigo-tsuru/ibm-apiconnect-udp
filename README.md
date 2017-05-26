@@ -21,12 +21,18 @@ Based on:
     
 ![Catalog settings](docs/screenshots/apimanager_catalog_settings.png)
     
+    • Click on policies
+![Catalog settings -> policies](docs/screenshots/apimanager_catalog_settings_policies.png)
     • Select the zip file that is created by the build process to import to API Connect 
-    
+![Catalog settings -> policies](docs/screenshots/apimanager_policy_upload.png)
     • To enable your policy to be visible by API Designer you must:
       • Insert the following lines in your $HOME/.apiconnect/config file:
       userPolicies:
         - "/GIT/ibm-apiconnect-udp/base64decode-source"
+        
+    • You should be able to use your user defined policy from Assembly Palette
+![Assembly paletter -> user defined policy](docs/screenshots/apidesigner_userdefinedpolicy.png)    
+
 
 ## Policies guidelines
 
