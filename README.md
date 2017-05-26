@@ -7,11 +7,16 @@ Based on:
 
     • Pull this repository down onto your machine
     $ git clone https://github.com/rodrigo-tsuru/ibm-apiconnect-udp.git
+    
     • Run the build script against the policy folder
     $ package_dp_policy.sh -d base64decode-source/
+    
     • Log-in to API Manager: http://apim/apim
+    
     • In an API Connect catalog visit settings/policies
+    
     • Select the zip file that is created by the build process to import to API Connect 
+    
     • To enable your policy to be visible by API Designer you must:
       • Insert the following lines in your $HOME/.apiconnect/config file:
       userPolicies:
