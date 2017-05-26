@@ -1,0 +1,38 @@
+#      Licensed Materials - Property of IBM
+#
+#      © IBM Corp. 2016
+
+policy: 1.0.0
+
+info:
+  title: Base64 Decode
+  name: base64decode-policy
+  version: 1.0.0
+  description: Decode a Base64-encoded field 
+  contact:
+        name: Rodrigo Tsuru
+        email: caixapostal@gmail.com
+  categories:
+    - User Defined 
+  display: 
+    color: '#ff3300' 
+    icon: transform
+
+
+
+attach:
+    - rest
+    - soap
+
+properties:
+    $schema: "http://json-schema.org/draft-04/schema#"
+    type: object
+    properties:
+        field:
+            label: Field to decode
+            description: The field to be decoded (in dot notation.e.g: account.person.signature)
+            type: string
+    required:
+      - field
+gateways:
+    - datapower-gateway

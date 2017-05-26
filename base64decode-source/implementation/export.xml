@@ -1,0 +1,39 @@
+<datapower-configuration version="3"><export-details><description>Exported Configuration</description><user>admin</user><domain>mqinvoke</domain><comment/><product-id>software</product-id><product>IDG</product><display-product>IDG</display-product><model>IBM DataPower Gateway</model><display-model>IBM DataPower Gateway</display-model><device-name>3ebf97b098be</device-name><serial-number>0000001</serial-number><firmware-version>IDG.7.5.2.6</firmware-version><display-firmware-version>IDG.7.5.2.6</display-firmware-version><firmware-build>286852</firmware-build><firmware-timestamp>2017/04/21 10:45:02</firmware-timestamp><current-date>2017-05-26</current-date><current-time>03:15:49 EDT</current-time><reset-date>2017-05-26</reset-date><reset-time>01:21:55 EDT</reset-time><login-message/><custom-ui-file/></export-details><interface-data><interface name="eth0" type="Ethernet" vers="ipv4" ip-addr="172.19.0.2"/><interface name="eth0" type="Ethernet" vers="ipv6" ip-addr="fe80::42:acff:fe13:2"/></interface-data><configuration domain="mqinvoke"><StylePolicyAction name="base64decode-policy-decode" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Type>gatewayscript</Type>
+<Input>INPUT</Input>
+<InputLanguage>json</InputLanguage>
+<TransformLanguage>none</TransformLanguage>
+<OutputLanguage>default</OutputLanguage>
+<GatewayScriptLocation>local://policy/base64decode-policy/decode.js</GatewayScriptLocation>
+<ActionDebug persisted="false">off</ActionDebug>
+<TxMode>default</TxMode>
+<Output>OUTPUT</Output>
+<NamedInOutLocationType>default</NamedInOutLocationType>
+<SSLClientConfigType>proxy</SSLClientConfigType>
+<OutputType>default</OutputType>
+<Transactional>off</Transactional>
+<SOAPValidation>body</SOAPValidation>
+<SQLSourceType>static</SQLSourceType>
+<JOSESerializationType>compact</JOSESerializationType>
+<JWEEncAlgorithm>A128CBC-HS256</JWEEncAlgorithm>
+<JOSEVerifyType>identifiers</JOSEVerifyType>
+<JOSEDecryptType>identifiers</JOSEDecryptType>
+<JWSVerifyStripSignature>on</JWSVerifyStripSignature>
+<Asynchronous>off</Asynchronous>
+<ResultsMode>first-available</ResultsMode>
+<RetryCount>0</RetryCount>
+<RetryInterval>1000</RetryInterval>
+<MultipleOutputs>off</MultipleOutputs>
+<IteratorType>XPATH</IteratorType>
+<Timeout>0</Timeout>
+<MethodRewriteType>GET</MethodRewriteType>
+<MethodType>POST</MethodType>
+<MethodType2>POST</MethodType2></StylePolicyAction><StylePolicyRule name="base64decode-policy-main" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Direction>rule</Direction>
+<InputFormat>none</InputFormat>
+<OutputFormat>none</OutputFormat>
+<NonXMLProcessing>on</NonXMLProcessing>
+<Unprocessed>off</Unprocessed>
+<Actions class="StylePolicyAction">base64decode-policy-decode</Actions></StylePolicyRule></configuration><files><file name="local:///policy/base64decode-policy/decode.js" src="local/policy/base64decode-policy/decode.js" location="local" hash="DmtcxNYnk4kL9N/YXaS81Go1Idc="/><file name="webgui:///clixform.xsl" src="dp-aux/clixform.xsl" location="dp-aux" internal="true" hash="PNoW82UE/QTTtzh9kAREBKHtp3E="/><file name="webgui:///SchemaUtil.xsl" src="dp-aux/SchemaUtil.xsl" location="dp-aux" internal="true" hash="YWjVARwxJCW3zkIbcgQw2UJL1kM="/><file name="webgui:///management.xsl" src="dp-aux/management.xsl" location="dp-aux" internal="true" hash="jaVBcAZOZmnnAJfQcSbjdqhK1ks="/><file name="webgui:///map-dmz.xsl" src="dp-aux/map-dmz.xsl" location="dp-aux" internal="true" hash="n00B2bmGoH6OdSOW1QRz/SNVbYc="/><file name="webgui:///drMgmt.xml" src="dp-aux/drMgmt.xml" location="dp-aux" internal="true" hash="byBOuESqkGeBgmDps4BA7wkNr34="/><file name="webgui:///basetypes.xml" src="dp-aux/basetypes.xml" location="dp-aux" internal="true" hash="UkIc6sKzykqNpmVlsHF89TLn2Qo="/></files></datapower-configuration>
