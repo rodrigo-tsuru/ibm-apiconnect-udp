@@ -11,9 +11,14 @@ Based on:
     • Run the build script against the policy folder
     $ package_dp_policy.sh -d base64decode-source/
     
-    • Log-in to API Manager: http://apim/apim
+    • Log-in to API Manager: https://apim/apim
     
-    • In an API Connect catalog visit settings/policies
+    • Go to Dashboard (Menu -> Dashboard)
+    
+    • Select a catalog
+    
+    • Click on settings
+    ![alt text](https://github.com/rodrigo-tsuru/ibm-apiconnect-udp/raw/master/docs/screenshots/apimanager_catalog_settings.png)
     
     • Select the zip file that is created by the build process to import to API Connect 
     
