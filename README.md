@@ -6,8 +6,8 @@ Based on:
 ## Installation 
 
     • Pull this repository down onto your machine
+    $ git clone https://github.com/rodrigo-tsuru/ibm-apiconnect-udp.git
     • Run the build script against the policy folder
-    
     $ package_dp_policy.sh -d base64decode-source/
     • Log-in to API Manager: http://apim/apim
     • In an API Connect catalog visit settings/policies
