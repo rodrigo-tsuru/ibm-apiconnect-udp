@@ -2,6 +2,7 @@
 
 GREEN="\033[0;32m"
 RED="\033[0;31m"
+YELLOW="\033[0;33m"
 NC="\033[0m" # No Color
 FAIL=0;
 
@@ -22,6 +23,17 @@ function show_usage {
     echo "  -h : Shows this text"
     echo
     exit 1
+}
+
+function show_apidesigner_usage {
+    echo
+    echo -e "${YELLOW}Please follow the instructions to enable your policy in the API Designer"
+    echo "Insert the following lines into ${HOME}/.apiconnect/config file: "
+    echo
+    echo userPolicies:
+    echo   - "${START_DIR}/${SOURCE_DIR}"
+    echo -e ${NC}
+    echo Your policy should now be visible in the API Assembly palette.
 }
 
 function fail_build {
@@ -162,6 +174,7 @@ if [[ $FAIL -eq 0 ]]; then
     echo "Tidying up..."
     rm -r $OUTPUT_DIR
     echo -e "${GREEN}BUILD SUCCESS${NC}, output: $STARTDIR/$OUTPUT_DIR.zip"
+    show_apidesigner_usage
 else
     echo "Failure."
 fi
