@@ -141,10 +141,10 @@ echo "Checking the structure of the output directory..."
 if [[ -d "$OUTPUT_DIR" ]]; then
     if [[ -d "$OUTPUT_DIR/implementation" ]]; then
         if [[ -e "$OUTPUT_DIR/implementation/$OUTPUT_DIR-main.zip" ]]; then
-            if [[ -e "$OUTPUT_DIR/$OUTPUT_DIR.yaml" ]]; then
+            if [[ -e "$OUTPUT_DIR/policy.yaml" ]]; then
                 echo "Structure is correct"
             else
-                fail_build "The folder: $OUTPUT_DIR must contain a definitions file called \"$OUTPUT_DIR.yaml\""
+                fail_build "The folder: $OUTPUT_DIR must contain a definitions file called \"policy.yaml\""
             fi
         else
             fail_build "The implementation subdirectory must contain a zip called \"$OUTPUT_DIR-main.zip\""
