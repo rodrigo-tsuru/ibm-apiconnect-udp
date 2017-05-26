@@ -25,6 +25,7 @@ Based on:
 ![Catalog settings -> policies](docs/screenshots/apimanager_catalog_settings_policies.png)
     • Select the zip file that is created by the build process to import to API Connect 
 ![Catalog settings -> policies](docs/screenshots/apimanager_policy_upload.png)
+    
     • To enable your policy to be visible by API Designer you must:
       • Insert the following lines in your $HOME/.apiconnect/config file:
       userPolicies:
