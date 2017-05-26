@@ -18,7 +18,8 @@ Based on:
     • Select a catalog
     
     • Click on settings
-    ![alt text](https://github.com/rodrigo-tsuru/ibm-apiconnect-udp/raw/master/docs/screenshots/apimanager_catalog_settings.png)
+    
+![Catalog settings](docs/screenshots/apimanager_catalog_settings.png)
     
     • Select the zip file that is created by the build process to import to API Connect 
     
